@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 063e77c0a04ba2f4ea2f4933df300c9d, type: 3}
+  m_Name: Mountain
+  m_EditorClassIdentifier: 
+  debugColor: {r: 0.5529412, g: 0.31764707, b: 0.011764707, a: 1}
+  tiles:
+  - {fileID: 11400000, guid: b6a252947d81c2c4ea22b1a773ada20d, type: 2}
+  - {fileID: 11400000, guid: b9d6fa04db8a2504cb994f3d306e6844, type: 2}
+  - {fileID: 11400000, guid: f59608aebf909a14a838f4323aaa0598, type: 2}
+  - {fileID: 11400000, guid: aa68aec7d2117184d865c4eaf9ddd335, type: 2}
+  - {fileID: 11400000, guid: 9cbeb150b57875f41835b79b492b3cfe, type: 2}
+  - {fileID: 11400000, guid: a99239c010339bf4cb419d0a3cce2e31, type: 2}
+  minHeight: 0.42
+  minMoisture: 0
+  minHeat: 0

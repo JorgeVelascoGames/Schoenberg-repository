@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 063e77c0a04ba2f4ea2f4933df300c9d, type: 3}
+  m_Name: Grassland
+  m_EditorClassIdentifier: 
+  debugColor: {r: 0.8283882, g: 1, b: 0.5424528, a: 1}
+  tiles:
+  - {fileID: 11400000, guid: d27b94b8f4b9fcf4ea2e67e50b51f4e6, type: 2}
+  - {fileID: 11400000, guid: c5c965e9ab4af0545808c9c4da3cbccd, type: 2}
+  - {fileID: 11400000, guid: d7c9395324e37784187c5882bfa1d1c7, type: 2}
+  minHeight: 0.2
+  minMoisture: 0.6
+  minHeat: 0.3

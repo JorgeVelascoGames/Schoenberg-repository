@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 063e77c0a04ba2f4ea2f4933df300c9d, type: 3}
+  m_Name: Ocean
+  m_EditorClassIdentifier: 
+  debugColor: {r: 0, g: 0.79215693, b: 1, a: 1}
+  tiles:
+  - {fileID: 11400000, guid: d9ab84f34334ecc4e9f680f77caf0cdd, type: 2}
+  - {fileID: 11400000, guid: 8a45fc0b55c285b4ea22520aeabbfdd9, type: 2}
+  - {fileID: 11400000, guid: 3a167200c5a6d174a8e3ef81dacd7589, type: 2}
+  - {fileID: 11400000, guid: 660dd8b5418527f4898579681cc67fe5, type: 2}
+  - {fileID: 11400000, guid: 66e578ac0ebf9ac42bc12675cc35320a, type: 2}
+  - {fileID: 11400000, guid: 6d320814da3d644448a28c4abba9ff2b, type: 2}
+  minHeight: 0
+  minMoisture: 0
+  minHeat: 0
