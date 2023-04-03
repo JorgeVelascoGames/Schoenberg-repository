@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum CharacterRaces
+public enum CharacterRace
 {
 	Chameleonites,
 	Goblin,

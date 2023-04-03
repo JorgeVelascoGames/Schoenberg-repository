@@ -10,6 +10,6 @@ public class Test : MonoBehaviour
 	[Button]
 	public void GenerateFactionName()
 	{
-		Debug.Log(new CharacterNameGenerator().GetCharacterName(CharacterRaces.Golem));
+		Debug.Log(new CharacterNameGenerator().GetCharacterName(CharacterRace.Golem));
 	}
 }

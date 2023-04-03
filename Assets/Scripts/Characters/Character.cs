@@ -6,11 +6,11 @@ using UnityEngine;
 [System.Serializable]
 public class Character : GameEntity
 {
-	public Character(CharacterRaces race, Faction faction, FactionRanges range)
+	public Character(CharacterRace race, Faction faction, FactionRanges range)
 	{
 		characterRace = race;
 		this.faction = faction;
-		world = faction.CurrentWorld;
+		world = faction.World;
 		this.range = range;
 
 		switch (world)
@@ -138,6 +138,8 @@ public class Character : GameEntity
 
 		inventory = new Inventory();
 
+		world = faction.World;
+
 		name = NameGeneratorManager.GetName(this);
 	}
 
@@ -151,19 +153,15 @@ public class Character : GameEntity
 	public int Level => level;
 
 
-	private CharacterRaces characterRace;
+	private CharacterRace characterRace;
 	[ShowInInspector]
-	public CharacterRaces Race => characterRace;
+	public CharacterRace Race => characterRace;
 
 
-	private Faction faction;
+	private Faction faction;	
+	public Faction CharacterFaction => faction;
 	[ShowInInspector]
-	public Faction Faction => faction;
-
-
-	private World world;
-	[ShowInInspector]
-	public World CurrentWorld => world;
+	public string factionName => faction.FactionName; 
 
 
 	private FactionRanges range;

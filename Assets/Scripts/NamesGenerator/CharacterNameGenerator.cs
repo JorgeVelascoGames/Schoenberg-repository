@@ -11,28 +11,28 @@ public class CharacterNameGenerator
 	private TrollNameGenerator trollName = new TrollNameGenerator();
 	private GolemNameGenerator golemName = new GolemNameGenerator();
 
-	public string GetCharacterName(CharacterRaces race)
+	public string GetCharacterName(CharacterRace race)
 	{
 		string name = "";
 
 		switch (race)
 		{
-			case CharacterRaces.Goblin:
+			case CharacterRace.Goblin:
 				name = goblinName.GetGoblinName();
 				break;
-			case CharacterRaces.Dwarf:
+			case CharacterRace.Dwarf:
 				name = dwarfName.GetDwarfName();
 				break;
-			case CharacterRaces.Chameleonites:
+			case CharacterRace.Chameleonites:
 				name = chameleoniteName.GetChameleoniteName();
 				break;
-			case CharacterRaces.Mudborn:
+			case CharacterRace.Mudborn:
 				name = mudbornName.GetMudbornName();
 				break;
-			case CharacterRaces.Troll:
+			case CharacterRace.Troll:
 				name = trollName.GetTrollName();
 				break;
-			case CharacterRaces.Golem:
+			case CharacterRace.Golem:
 				name = golemName.GetGolemName();
 				break;
 		}

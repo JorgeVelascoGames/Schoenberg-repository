@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 19453754}
   - component: {fileID: 19453753}
   - component: {fileID: 19453755}
+  - component: {fileID: 19453756}
   m_Layer: 0
   m_Name: Map 1
   m_TagString: Untagged
@@ -155,6 +156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bfd4d5674c95ea499e8d54f711cc969, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  world: 0
   width: 300
   height: 300
   scale: 0.3
@@ -332,6 +334,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 635a80bc18bd7d44b8cbee7587088da8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &19453756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 19453750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 865d4b55dc0fb0b41a4f1ed633fe1032, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &63183802
@@ -912,6 +926,7 @@ GameObject:
   - component: {fileID: 499292177}
   - component: {fileID: 499292175}
   - component: {fileID: 499292178}
+  - component: {fileID: 499292179}
   m_Layer: 0
   m_Name: Map 5
   m_TagString: Untagged
@@ -960,6 +975,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bfd4d5674c95ea499e8d54f711cc969, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  world: 4
   width: 300
   height: 300
   scale: 0.3
@@ -1108,6 +1124,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 635a80bc18bd7d44b8cbee7587088da8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &499292179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 499292173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 865d4b55dc0fb0b41a4f1ed633fe1032, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!28 &598116035
@@ -1363,6 +1391,7 @@ GameObject:
   - component: {fileID: 772077322}
   - component: {fileID: 772077320}
   - component: {fileID: 772077323}
+  - component: {fileID: 772077324}
   m_Layer: 0
   m_Name: Map 6
   m_TagString: Untagged
@@ -1411,6 +1440,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bfd4d5674c95ea499e8d54f711cc969, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  world: 5
   width: 300
   height: 300
   scale: 0.3
@@ -1559,6 +1589,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 635a80bc18bd7d44b8cbee7587088da8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &772077324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 772077318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 865d4b55dc0fb0b41a4f1ed633fe1032, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &780698587
@@ -1971,6 +2013,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1098908046}
   - component: {fileID: 1098908045}
+  - component: {fileID: 1098908047}
   m_Layer: 0
   m_Name: test
   m_TagString: Untagged
@@ -2005,6 +2048,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1098908047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1098908044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ce4bcba56133ca4aae5b06add8a5733, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1220464598
 GameObject:
   m_ObjectHideFlags: 0
@@ -2248,6 +2303,7 @@ GameObject:
   - component: {fileID: 1448539205}
   - component: {fileID: 1448539203}
   - component: {fileID: 1448539206}
+  - component: {fileID: 1448539207}
   m_Layer: 0
   m_Name: Map 4
   m_TagString: Untagged
@@ -2296,6 +2352,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bfd4d5674c95ea499e8d54f711cc969, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  world: 3
   width: 300
   height: 300
   scale: 0.3
@@ -2446,6 +2503,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 635a80bc18bd7d44b8cbee7587088da8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1448539207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448539201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 865d4b55dc0fb0b41a4f1ed633fe1032, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1599937879
 GameObject:
   m_ObjectHideFlags: 0
@@ -2575,6 +2644,7 @@ GameObject:
   - component: {fileID: 1610132318}
   - component: {fileID: 1610132316}
   - component: {fileID: 1610132319}
+  - component: {fileID: 1610132320}
   m_Layer: 0
   m_Name: Map 3
   m_TagString: Untagged
@@ -2623,6 +2693,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bfd4d5674c95ea499e8d54f711cc969, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  world: 2
   width: 300
   height: 300
   scale: 0.3
@@ -2771,6 +2842,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 635a80bc18bd7d44b8cbee7587088da8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1610132320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1610132314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 865d4b55dc0fb0b41a4f1ed633fe1032, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1718485102
@@ -3266,6 +3349,7 @@ GameObject:
   - component: {fileID: 2086065542}
   - component: {fileID: 2086065540}
   - component: {fileID: 2086065543}
+  - component: {fileID: 2086065544}
   m_Layer: 0
   m_Name: Map 2
   m_TagString: Untagged
@@ -3314,6 +3398,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bfd4d5674c95ea499e8d54f711cc969, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  world: 1
   width: 300
   height: 300
   scale: 0.3
@@ -3462,6 +3547,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 635a80bc18bd7d44b8cbee7587088da8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2086065544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2086065538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 865d4b55dc0fb0b41a4f1ed633fe1032, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2093474847

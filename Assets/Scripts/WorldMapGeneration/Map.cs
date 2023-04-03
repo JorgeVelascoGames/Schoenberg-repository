@@ -17,8 +17,14 @@ public enum MapDisplay
 
 [RequireComponent(typeof(MapGridManager))]
 [RequireComponent(typeof(MapElementsGeneration))]
+[RequireComponent(typeof(FactionManager))]
 public class Map : MonoBehaviour
 {
+	[BoxGroup("World info")]
+	[SerializeField]
+	private World world;
+	public World World => world;
+
 	[BoxGroup("Map configuration")]
 	[SerializeField] private int width;
 	public int Width
@@ -100,11 +106,19 @@ public class Map : MonoBehaviour
 	{
 		mapGridManager.InitializeGrid();
 		GenerateMap();
+		GenerateMapContent();
 	}
 
 	public void SetMapActive(bool state)
 	{
 		mapElementsContainer.gameObject.SetActive(state);
+	}
+
+	//Here we generate everything on each map
+	private void GenerateMapContent()
+	{
+		//Generate Factions
+		//Generate Dungeons
 	}
 
 	void GenerateMap()

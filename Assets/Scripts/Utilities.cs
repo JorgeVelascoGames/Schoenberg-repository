@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using System.Linq;
 
 namespace VelascoGames.Utilities
 {
@@ -101,7 +102,7 @@ namespace VelascoGames.Utilities
 		}
 
 		///<summary>
-		///Get the closest GameObject from any list
+		///Get the closest GameObject from any list (in space)
 		///</summary>
 		public static GameObject ClosestGameObject(List<GameObject> list, Transform actor)
 		{
@@ -159,6 +160,23 @@ namespace VelascoGames.Utilities
 				Debug.Log(selection.name);
 
 			return selection;
+		}
+
+		///<summary>
+		///Get a random member of an enum
+		///</summary>
+		///
+		public static T GetRandomEnumValue<T>() where T : Enum
+		{
+			return (T)typeof(T).GetRandomEnumValueCalculation();
+		}
+
+		private static Enum GetRandomEnumValueCalculation(this Type t)
+		{
+			return Enum.GetValues(t)          // get values from Type provided
+				.OfType<Enum>()               // casts to Enum
+				.OrderBy(e => Guid.NewGuid()) // mess with order of results
+				.FirstOrDefault();            // take first item in result
 		}
 	}
 }
