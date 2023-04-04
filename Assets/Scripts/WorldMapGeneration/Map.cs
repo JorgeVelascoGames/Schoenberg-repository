@@ -18,6 +18,7 @@ public enum MapDisplay
 [RequireComponent(typeof(MapGridManager))]
 [RequireComponent(typeof(MapElementsGeneration))]
 [RequireComponent(typeof(FactionManager))]
+[RequireComponent(typeof(LootManager))]
 public class Map : MonoBehaviour
 {
 	[BoxGroup("World info")]
@@ -102,6 +103,7 @@ public class Map : MonoBehaviour
 		mapGridManager = GetComponent<MapGridManager>();
 	}
 
+	[Button]
 	public void InitMap()
 	{
 		mapGridManager.InitializeGrid();
@@ -120,8 +122,8 @@ public class Map : MonoBehaviour
 		//Generate Factions
 		//Generate Dungeons
 	}
-
-	void GenerateMap()
+	
+	private void GenerateMap()
 	{
 		RandomizeWaves();
 
