@@ -299,15 +299,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dungeonGrid: {fileID: 1495715775}
-  mapWidth: 2
-  mapHeight: 2
+  mapWidth: 5
+  mapHeight: 7
   roomsToGenerate: 19
   roomPrefab: {fileID: 8657572337331442462, guid: 95d552d7cb48c0846a2007f64e3c2d10, type: 3}
   enemySpawnChance: 0.25
   coinSpawnChance: 0.424
   healthSpawnChance: 0.267
   maxEnemiesPerRoom: 1
-  maxCoinsPerRoom: 1
+  maxCoinsPerRoom: 3
   maxHealthPerRoom: 1
 --- !u!114 &1495715775
 MonoBehaviour:

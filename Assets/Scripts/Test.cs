@@ -8,8 +8,14 @@ public class Test : MonoBehaviour
 {
 
 	[Button]
+	public void GenerateCharacterName(CharacterRace race)
+	{
+		Debug.Log(new CharacterNameGenerator().GetCharacterName(race));
+	}
+
+	[Button]
 	public void GenerateFactionName()
 	{
-		Debug.Log(new CharacterNameGenerator().GetCharacterName(CharacterRace.Golem));
+		Debug.Log(new FactionNameGenerator().GetFactionName());
 	}
 }
